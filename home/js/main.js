@@ -13,12 +13,12 @@ $(function () {
     $('#ben').click(function () {
         $(this).addClass('selected')
         $('#zhuan').removeClass('selected')
-        $('.js_toggle_box').eq(0).addClass('module_block').next().removeClass('module_block')
+        $('.js_toggle_box').eq(0).show(300).next().hide(300)
     })
     $('#zhuan').click(function () {
         $(this).addClass('selected')
         $('#ben').removeClass('selected')
-        $('.js_toggle_box').eq(1).addClass('module_block').prev().removeClass('module_block')
+        $('.js_toggle_box').eq(1).show(300).prev().hide(300)
     })
 })
 
