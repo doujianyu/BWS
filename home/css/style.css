@@ -113,6 +113,9 @@
 
 .bws_banner {
   height: 520px; }
+  .bws_banner .swiper-slide {
+    background-size: cover;
+    background-position: center center; }
   .bws_banner a {
     display: block;
     height: 100%; }

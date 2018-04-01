@@ -156,29 +156,99 @@
     }
 }
 
-// 广告图
-.bws_banner{
-    height: 520px;
-    .swiper-slide{
-        background:{
-            size: cover;
-            position: center center;
+// 地图导航
+.bws_web_map{
+    &_wrap{
+        @include boxCenter;
+        height: 126px;
+        line-height: 126px;
+        position: relative;
+        ul{
+            position: absolute;
+            left: 0;top: 0;
+            font-size: 13px;
+            li:first-child{
+                margin-right: 6px;
+            }
+            i{
+                padding: 0 10px;
+            }
         }
-    }
-    a{
-        display: block;
-        height: 100%;
+        h6{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
     }
 }
 
-// 模块
+// 内容部分
+.bws_context_wrap{
+    @include boxCenter;
+}
 .bws_module{
     &_wrap{
         @include boxCenter;
         padding-top: 30px;
     }
     &_left{
-        width: 366px;
+        width: 742px;
+        &_cont_text{
+            &_title{
+                padding: 0 0 40px;
+                span{
+                    font-size: 30px;
+                    font-weight: bold;
+                    vertical-align: text-bottom;
+                }
+                ul{
+                    margin-left: 238px;
+                }
+                li{
+                    display: inline-block;
+                    font-size: 12.5px;
+                    padding-top: 16px;
+                }
+                .time{
+                    width: 252px;
+                }
+                .address{
+                    width: 108px;
+                }
+                .number{
+                    width: 100px;
+                }
+                .share{
+                    a{
+                        display: block;
+                        color: #199edc;
+                        &:hover{
+                            color: #c20000;
+                        }
+                    }
+                    i{
+                        margin-left: 4px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            &_main{
+                font-size: 14.58px;
+                color: #333;
+                line-height: 1.2;
+                border-bottom: 1px solid #199edc;
+            }
+            &_page{
+                font-size: 12.5px;
+                line-height: 55px;
+                a{
+                    &:hover{
+                        color: #c20000;
+                    }
+                }
+            }
+        }
+        
     }
     &_title{
         height: 42px;
@@ -271,305 +341,114 @@
         
     }
     &_right{
-        &_introduce{
-            width: 496px;
-            padding: 0 22px;
-            h6{
-                font-size: 26px;
-                text-align: center;
-                line-height: 30px;
-                padding-top: 14px;
-                position: relative;
-                &:last-of-type{
-                    padding: 30px 0;
-                    margin-top: -1px; // 消除横线占位
-                    &:after{
-                        content: '';
-                        width: 313px;
-                        height: 1px;
-                        background: #757575;
-                        position: absolute;
-                        left: 50%;
-                        top: 0;
-                        transform: translateX(-50%)
-                    }
-                }
-            }
-            p{
-                margin: 30px 0;
-                text-indent: 2em;
-                line-height: 25px;
-                color: #333;
-                display: -webkit-box; 
-                white-space: normal;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-            }
-            ul li{
-                float: left;
-                width: 50%;
-                margin-bottom: 14px;
-                span{
-                    display: block;
-                    margin: 0 24px;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                }
-            }
-        }
-        &_form{
-            width: 273px;
-            padding-left: 20px;
-            font-size: 0;
-            h6{
-                width: 100%;
-                border: 0;
-                font-size: 19px;
-            }
-            form{
-                p{
-                    margin-bottom: 16px;
-                    position: relative;
-                    &:after{
-                        content: '*';
-                        width: 20px;
-                        height: 100%;
-                        line-height: 29px;
-                        text-align: center;
-                        font-size: 12px;
-                        position: absolute;
-                        left: 0; top: 0;
-                        z-index: 9;
-                    }
-                    &:last-of-type:after{
-                        content: '';
-                    }
-                }
-                input,
-                textarea{
-                    padding: 0;
-                    font-size: 12px;
-                    border: 1px solid #d0d0d0;
-                }
-                textarea{
-                    width: 258px;
-                    height: 80px;
-                    resize: none;
-                    padding: 6px 8px;
-                }
-                input{
-                    width: 274px;
-                    height: 27px;
-                    text-indent: 20px;
-                }
-                div{
-                    font-size: 12px;
-                    button{
-                        width: 105px;
-                        height: 29px;
-                        background: #ca0000;
-                        font-size: 14px;
-                        color: #fff;
-                        border: 0;
-                        float: left;
-                    }
-                    dl{
-                        margin-left: 123px;
-                        line-height: 16px;
-                        dd{
-                            margin-bottom: 7px;
-                        }
-                        i{
-                            font-size: 16px;
-                            margin-right: 8px;
-                        }
-                    }
-                }
-            }
-        }
-        &_college{
-            width: 416px;
-            padding: 0 26px;
-            .module_block{
+        width: 417px;
+        &_top{
+            width: 100%;
+            height: 246px;
+            background: #199edc;
+            a{
                 display: block;
             }
-            &_cont_wrap{
-                display: none;
-            }
-            &_cont{
-                dl{
-                    padding: 11px 0;
-                    dt{
-                        float: left;
-                        width: 80px;
-                        height: 80px;
-                        line-height: 80px;
-                        text-align: center;
-                        img{
-                            width: 68px;
-                            display: inline-block;
-                            vertical-align: middle;
-                        }
-                    }
-                    dd{
-                        margin-left: 96px;
-                        h6{
-                            font-size: 18px;
-                            margin-bottom: 16px;
-                            font-weight: bold;
-                        }
-                        p{
-                            line-height: 22px;
-                            font-size: 14px;
-                        }
-                        span{
-                            color: #c00;
-                        }
-                    }
-                }
-            }
-            .chatBtn{
-                width: 112px;
-                height: 33px;
-                background: #ca0000;
-                border-radius: 6px;
-                color: #fff;
-                border: 0;
-                float: right;
-            }
         }
-        &_book{
-            width: 365px;
-            ul li {
-                font-size: 13px;
-                padding: 10px 0;
-                line-height: 22px;
-                border-bottom: 1px solid #cecece;
-                position: relative;
-                p{
-                    overflow: hidden;
-                    margin-top: -22px;
-                }
-                a{
-                    float: right;
-                    background: #fff;
+        &_bottom{
+            padding-top: 28px;
+            &_list{
+                padding-top: 14px;
+                li{
+                    $fontColor: #676767;
+                    $aHoverColor: #c20000;
                     position: relative;
-                }
-            }
-        }
-        &_wbhot{
-            width: 365px;
-            &_details{
-                a{
-                    display: block;
-                }
-                dl{
-                    margin-bottom: 14px;
-                }
-                dt{
-                    width: 68px;
-                    height: 68px;
-                    background: #0ff;
-                }
-                dd{
-                    height: 68px;
-                    display: table-cell;
-                    vertical-align: middle;
-                    padding-left: 10px;
-                    font-size: 14px;
+                    padding-left: 40px;
+                    line-height: 30px;
+                    font-size: 13px;
+                    color: $fontColor;
                     overflow: hidden;
-                    h6{
-                        line-height: 20px;
+                    &:after{
+                        content: attr(data-index);
+                        width: 32px;
+                        height: 16px;
+                        line-height: 16px;
+                        text-align: center;
+                        background: #199edc;
+                        color: #fff;
+                        font-size: 12px;
+                        margin-top: -8px;
+                        position: absolute;
+                        left: 0; top: 50%;
                     }
                     p{
-                        height: 42px;
+                        width: 280px;
+                        white-space: nowrap;
                         overflow: hidden;
-                    }
-                }
-            }
-        }
-        &_move{
-            width: 755px;
-            padding-left: 78px;
-            .bws_module_title{
-                padding-right: 34px;
-            }
-            &_details{
-                padding-top: 20px;
-                .left_btn,
-                .right_btn{
-                    width: 41px;
-                    height: 200px;
-                    user-select: none;
-                    &:after{
-                        content: '';
-                        height: 100%;
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
-                    span{
-                        width: 100%;
-                        padding: 10px 0;
-                        text-align: center;
-                        display: inline-block;
-                        font-size: 30px;
-                        color: #e4e4e4;
-                        vertical-align: middle;
-                        cursor: pointer;
-                    }
-                }
-                .left_btn{
-                    float: left;
-                }
-                .right_btn{
-                    float: right;
-                }
-                .center_cont{
-                    width: 100%;
-                    height: 200px;
-                }
-                .move_wrap{
-                    height: 200px;
-                    margin: 0 41px;
-                    position: relative;
-                    overflow: hidden;
-                    .move_ele{
-                        position: absolute;
-                        left: 0;top: 0;
-                        margin-right: -20px;
-                        padding-left: 4px;
-                    }
-                    a{
+                        text-overflow: ellipsis;
                         float: left;
-                        margin-right: 20px;
-                        &:hover{
-                            color:  #c20000;
+                        a{
+                            color: $fontColor;
+                            &:hover{
+                                color: $aHoverColor;
+                            }
                         }
                     }
-                    dl{
-                        width: 208px;
+                    span{
+                        width: 48px;
                         text-align: center;
-                    }
-                    dt{
-                        font-size: 14px;
-                        line-height: 40px;
-                    }
-                    dd{
-                        height: 156px;
-                        background: pink;
+                        float: right;
                     }
                 }
             }
         }
     }
-    &_center{
-        width: 364px;
-        padding: 0 52px;
+}
+
+// 列表
+.bws_module_lists{
+    @include boxCenter;
+    &_margin{
+        margin-right: -32px;
     }
-    &_last{
-        width: 365px;
+    &_item{
+        width: 366px;
+        margin-right: 32px;
+        &_list{
+            padding-top: 14px;
+            li{
+                $fontColor: #676767;
+                $aHoverColor: #c20000;
+                position: relative;
+                padding-left: 14px;
+                line-height: 30px;
+                font-size: 13px;
+                color: $fontColor;
+                overflow: hidden;
+                &:after{
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background: #cecece;
+                    margin-top: -2px;
+                    position: absolute;
+                    left: 0; top: 50%;
+                }
+                p{
+                    width: 280px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    float: left;
+                    a{
+                        color: $fontColor;
+                        &:hover{
+                            color: $aHoverColor;
+                        }
+                    }
+                }
+                span{
+                    width: 48px;
+                    text-align: center;
+                    float: right;
+                }
+            }
+        }
     }
 }
 
@@ -607,6 +486,7 @@
                     height: 34px;
                     padding: 0 5px;
                     border: 1px solid #ccc;
+                    text-align: left;
                 }
                 textarea{
                     width: 288px;
