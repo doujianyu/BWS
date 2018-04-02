@@ -8,6 +8,10 @@
   margin: 0 auto;
   font-size: 12px;
   color: #333; }
+  .bws_top_cont p {
+    margin-left: 224px;
+    margin-right: 224px;
+    text-align: center; }
 
 .bws_search_wrap {
   width: 1200px;

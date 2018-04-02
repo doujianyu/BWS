@@ -8,6 +8,10 @@
   margin: 0 auto;
   font-size: 12px;
   color: #333; }
+  .bws_top_cont p {
+    margin-left: 224px;
+    margin-right: 224px;
+    text-align: center; }
 
 .bws_search_wrap {
   width: 1200px;
@@ -114,11 +118,13 @@
 .bws_banner {
   height: 520px; }
   .bws_banner .swiper-slide {
+    height: 520px;
     background-size: cover;
     background-position: center center; }
   .bws_banner a {
     display: block;
-    height: 100%; }
+    width: 100%;
+    height: 520px; }
 
 .bws_module_wrap {
   width: 1200px;
@@ -253,6 +259,7 @@
       height: 100%;
       line-height: 29px;
       text-align: center;
+      color: #757575;
       font-size: 12px;
       position: absolute;
       left: 0;
@@ -287,8 +294,6 @@
     .bws_module_right_form form div dl {
       margin-left: 123px;
       line-height: 16px; }
-      .bws_module_right_form form div dl dd {
-        margin-bottom: 7px; }
       .bws_module_right_form form div dl i {
         font-size: 16px;
         margin-right: 8px; }
@@ -465,6 +470,7 @@
       width: 288px;
       height: 74px;
       padding: 5px;
+      border: 1px solid #ccc;
       resize: none; }
     .bws_sign_up_wrap .center_from .table_cont {
       margin-left: 88px; }

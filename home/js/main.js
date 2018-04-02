@@ -24,7 +24,7 @@ $(function () {
 
 $(function () { // 添加省略号
     var clip = $('#bws_text_clip')
-    if(clip.text().length > 59){
+    if(clip.text().length > 80){
         clip.text(clip.text().substring(0, 80))
         clip.html(clip.html() + '...')
     }
@@ -62,7 +62,7 @@ $(function(){
             parentWidth = parent.width(),
             maxMove = parseInt(((childrenWidth * childrenLen) - parentWidth) / childrenWidth),currentMove = 0
         ele.css({
-            width: `${childrenWidth * childrenLen}px`
+            width: childrenWidth * childrenLen + 'px'
         })
         btns[0].click(function () {
             console.log(1)
@@ -72,7 +72,7 @@ $(function(){
                     currentMove = maxMove
                 }
                 ele.animate({
-                    left: `-${childrenWidth * currentMove}px`
+                    left: '-' + (childrenWidth * currentMove) + 'px'
                 }, speed)
             }
             
@@ -85,7 +85,7 @@ $(function(){
                     currentMove = 0
                 }
                 ele.animate({
-                    left: `-${childrenWidth * currentMove}px`
+                    left: '-' + (childrenWidth * currentMove) + 'px'
                 }, speed)
             }
         })

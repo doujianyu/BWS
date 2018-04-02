@@ -21,6 +21,11 @@
         @include boxCenter;
         font-size: 12px;
         color: #333;
+        p{
+            margin-left: 224px;
+            margin-right: 224px;
+            text-align: center;
+        }
     }
 }
 
@@ -219,62 +224,60 @@
                 text-indent: 34px;
             }
         }
-        .cont_right{
-            width: 416px;
-            .title{
+        .bws_module_right{
+            width: 417px;
+            &_top{
                 width: 100%;
                 height: 246px;
-                background-color: #199edc;
-                margin-bottom: 40px;
-            }
-            &_title{
-                height: 42px;
-                line-height: 42px;
-                border-bottom: 2px solid #dbdbdb;
-                font-weight: bold;
-                span {
-                    display: inline-block;
-                    border-bottom: 2px solid #c20000; 
-                    i{
-                        font-size: 24px;
-                        color: #000;
-                        float: left;
-                        margin-right: 8px;
-                        font-weight: normal;
-                    }
+                background: #199edc;
+                a{
+                    display: block;
                 }
             }
-            &_list{
-                padding-top: 14px;
-                li{
-                    position: relative;
-                    height:16px;
-                    margin-bottom: 17px;
-                    $pos:0;
-                    i{
-                        display: inline-block;
-                        position: absolute;
-                        left:$pos;
-                        top:$pos;
-                        width: 32px;
-                        background-color: #199edc;
-                        text-align: center;
-                        color: white;
-                    }
-                    p{
-                        width: 290px;
+            &_bottom{
+                padding-top: 28px;
+                &_list{
+                    padding-top: 14px;
+                    li{
+                        $fontColor: #676767;
+                        $aHoverColor: #c20000;
+                        position: relative;
+                        padding-left: 40px;
+                        line-height: 30px;
+                        font-size: 13px;
+                        color: $fontColor;
                         overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        padding-left: 40px; 
-                        a{
-                            &:hover{color:#c20000;}
+                        &:after{
+                            content: attr(data-index);
+                            width: 32px;
+                            height: 16px;
+                            line-height: 16px;
+                            text-align: center;
+                            background: #199edc;
+                            color: #fff;
+                            font-size: 12px;
+                            margin-top: -8px;
+                            position: absolute;
+                            left: 0; top: 50%;
                         }
-                    }
-                    span{
-                        position: absolute;
-                        top:$pos;
-                        right:$pos;
+                        p{
+                            width: 280px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            float: left;
+                            a{
+                                color: $fontColor;
+                                &:hover{
+                                    color: $aHoverColor;
+                                }
+                            }
+                        }
+                        span{
+                            width: 48px;
+                            text-align: center;
+                            float: right;
+                        }
                     }
                 }
             }
