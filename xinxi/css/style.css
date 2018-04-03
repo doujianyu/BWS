@@ -299,7 +299,8 @@
       width: 288px;
       height: 74px;
       padding: 5px;
-      resize: none; }
+      resize: none;
+      border: 1px solid #ccc; }
     .bws_sign_up_wrap .center_from .table_cont {
       margin-left: 88px; }
     .bws_sign_up_wrap .center_from .table_name {

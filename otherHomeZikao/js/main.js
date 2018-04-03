@@ -48,30 +48,28 @@ $(function(){
             parentWidth = parent.width(),
             maxMove = parseInt(((childrenWidth * childrenLen) - parentWidth) / childrenWidth),currentMove = 0
         ele.css({
-            width: `${childrenWidth * childrenLen}px`
+            width: childrenWidth * childrenLen + 'px'
         })
         btns[0].click(function () {
-            console.log(1)
             if (!ele.is(":animated")){
                 currentMove++
                 if (currentMove > maxMove) {
                     currentMove = maxMove
                 }
                 ele.animate({
-                    left: `-${childrenWidth * currentMove}px`
+                    left: '-' + (childrenWidth * currentMove) + 'px'
                 }, speed)
             }
             
         })
-        btns[1].click(function () {
-            console.log(2)            
+        btns[1].click(function () {    
             if (!ele.is(":animated")){
                 currentMove--
                 if (currentMove < 0) {
                     currentMove = 0
                 }
                 ele.animate({
-                    left: `-${childrenWidth * currentMove}px`
+                    left: '-' + (childrenWidth * currentMove) + 'px'
                 }, speed)
             }
         })

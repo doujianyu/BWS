@@ -265,7 +265,7 @@
     margin-bottom: 16px;
     position: relative; }
     .bws_module_right_form form p:after {
-      content: '*';
+      content: attr(data-required);
       width: 20px;
       height: 100%;
       line-height: 29px;
@@ -276,18 +276,18 @@
       left: 0;
       top: 0;
       z-index: 9; }
-    .bws_module_right_form form p:last-of-type:after {
-      content: ''; }
+  .bws_module_right_form form .color999 {
+    color: #999; }
   .bws_module_right_form form input,
   .bws_module_right_form form textarea {
     padding: 0;
     font-size: 12px;
     border: 1px solid #d0d0d0; }
   .bws_module_right_form form textarea {
-    width: 231px;
+    width: 256px;
     height: 80px;
     resize: none;
-    padding: 6px 20px; }
+    padding: 6px 8px; }
   .bws_module_right_form form input {
     width: 251px;
     height: 27px;

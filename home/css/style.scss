@@ -353,7 +353,7 @@
                     margin-bottom: 16px;
                     position: relative;
                     &:after{
-                        content: '*';
+                        content: attr(data-required);
                         width: 20px;
                         height: 100%;
                         line-height: 29px;
@@ -364,9 +364,9 @@
                         left: 0; top: 0;
                         z-index: 9;
                     }
-                    &:last-of-type:after{
-                        content: '';
-                    }
+                }
+                .color999{
+                    color: #999;
                 }
                 input,
                 textarea{
@@ -375,10 +375,10 @@
                     border: 1px solid #d0d0d0;
                 }
                 textarea{
-                    width: 231px;
+                    width: 256px;
                     height: 80px;
                     resize: none;
-                    padding: 6px 20px;
+                    padding: 6px 8px;
                 }
                 input{
                     width: 251px;

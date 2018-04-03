@@ -96,3 +96,36 @@ $(function(){
     }
 
 })
+
+// 兼容IE placeholder (绿色通道)
+$(function () {
+    $('.bws_module_right_form p').children().focus(function () {
+        var oldVal = $(this).val()
+        if ($(this).val() == '考生姓名' || $(this).val() == '联系方式' || $(this).val() == '备注') {
+            $(this).val('')
+        }
+        $(this).blur(function () {
+            if (/\s+/.test($(this).val()) || !$(this).val()) {
+                $(this).val(oldVal)
+            }
+        })
+    })
+})
+
+// 兼容IE placeholder (报名通道)
+$(function () {
+    $('.bws_module_right_form p').children().focus(function () {
+        if ($(this).val() == '考生姓名' || $(this).val() == '联系方式' || $(this).val() == '备注') {
+            var oldVal = $(this).val()
+            $(this).val('')
+        }
+        $(this).blur(function () {
+            if (/\s+/.test($(this).val()) || !$(this).val()) {
+                $(this).addClass('color999')
+            }
+        })
+        $(this).keypress(function(){
+            $(this).removeClass('color999')
+        })
+    })
+})

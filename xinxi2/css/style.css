@@ -215,13 +215,14 @@
       float: right; }
 
 .bws_column_wrap {
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 30px; }
+  margin-top: -30px;
+  margin-right: -40px; }
   .bws_column_wrap.not_padding {
     padding-top: 0; }
-.bws_column_left, .bws_column_right {
-  width: 580px; }
+.bws_column_left {
+  width: 580px;
+  padding-top: 30px;
+  margin-right: 40px; }
 
 .bws_sign_up_wrap {
   width: 1200px;
@@ -256,7 +257,8 @@
       width: 288px;
       height: 74px;
       padding: 5px;
-      resize: none; }
+      resize: none;
+      border: 1px solid #ccc; }
     .bws_sign_up_wrap .center_from .table_cont {
       margin-left: 88px; }
     .bws_sign_up_wrap .center_from .table_name {

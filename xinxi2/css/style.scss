@@ -294,15 +294,16 @@
 // 两栏模块
 .bws_column{
     &_wrap{
-        @include boxCenter;
-        padding-top: 30px;
+        margin-top: -30px;
+        margin-right: -40px;
         &.not_padding{
             padding-top: 0;
         }
     }
-    &_left,
-    &_right{
+    &_left{
         width: 580px;
+        padding-top: 30px;
+        margin-right: 40px;
     }
 }
 
@@ -347,6 +348,7 @@
                     height: 74px;
                     padding: 5px;
                     resize: none;
+                    border: 1px solid #ccc;
                 }
             }
             .table_cont{

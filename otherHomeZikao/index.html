@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_608049_x0g4evpnyszl4n29.css">
     <link rel="stylesheet" href="../assets/css/swiper-3.4.2.min.css">
-    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/jquery-1.11.3.js"></script>
     <script src="../assets/js/swiper-3.4.2.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
@@ -229,14 +229,14 @@
             <div class="bws_module_right_form fl">
                 <h6 class="bws_module_title">专升本绿色通道</h6>
                 <form action="">
-                    <p>
-                        <input type="text" placeholder="考生姓名">
+                    <p data-required="*">
+                        <input type="text" value="考生姓名">
+                    </p>
+                    <p data-required="*">
+                        <input type="text" value="联系方式">
                     </p>
                     <p>
-                        <input type="text" placeholder="联系方式">
-                    </p>
-                    <p>
-                        <textarea placeholder="备注"></textarea>
+                        <textarea>备注</textarea>
                     </p>
                     <div>
                         <button>问题提交</button>
@@ -870,11 +870,11 @@
         </h6>
         
         <div class="bws_module_move_details clearfix">
-            <div class="left_btn js_left_btn">
-                <span class="iconfont">&#xe606;</button>
+            <div class="left_btn js_left_btn" onselectstart="return false;">
+                <span class="iconfont">&#xe606;</span>
             </div>
-            <div class="right_btn js_right_btn">
-                <span class="iconfont">&#xe603;</button>
+            <div class="right_btn js_right_btn" onselectstart="return false;">
+                <span class="iconfont">&#xe603;</span>
             </div>
             <div class="center_cont">
                 <div class="move_wrap js_move_wrap">
@@ -936,11 +936,11 @@
         </h6>
         
         <div class="bws_module_move_details clearfix">
-            <div class="left_btn js_left_btn">
-                <span class="iconfont">&#xe606;</button>
+            <div class="left_btn js_left_btn" onselectstart="return false;">
+                <span class="iconfont">&#xe606;</span>
             </div>
-            <div class="right_btn js_right_btn">
-                <span class="iconfont">&#xe603;</button>
+            <div class="right_btn js_right_btn" onselectstart="return false;">
+                <span class="iconfont">&#xe603;</span>
             </div>
             <div class="center_cont">
                 <div class="move_wrap js_move_wrap">

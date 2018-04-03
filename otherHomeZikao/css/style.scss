@@ -340,18 +340,16 @@
                     margin-bottom: 16px;
                     position: relative;
                     &:after{
-                        content: '*';
+                        content: attr(data-required);
                         width: 20px;
                         height: 100%;
                         line-height: 29px;
                         text-align: center;
+                        color: #757575;
                         font-size: 12px;
                         position: absolute;
                         left: 0; top: 0;
                         z-index: 9;
-                    }
-                    &:last-of-type:after{
-                        content: '';
                     }
                 }
                 input,
@@ -361,15 +359,16 @@
                     border: 1px solid #d0d0d0;
                 }
                 textarea{
-                    width: 258px;
+                    width: 257px;
                     height: 80px;
                     resize: none;
                     padding: 6px 8px;
                 }
                 input{
-                    width: 274px;
+                    width: 251px;
                     height: 27px;
-                    text-indent: 20px;
+                    line-height: 27px;
+                    padding-left: 20px;
                 }
                 div{
                     font-size: 12px;
@@ -503,72 +502,6 @@
             .bws_module_title{
                 padding-right: 34px;
             }
-            &_details{
-                padding-top: 20px;
-                .left_btn,
-                .right_btn{
-                    width: 41px;
-                    height: 200px;
-                    user-select: none;
-                    &:after{
-                        content: '';
-                        height: 100%;
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
-                    span{
-                        width: 100%;
-                        padding: 10px 0;
-                        text-align: center;
-                        display: inline-block;
-                        font-size: 30px;
-                        color: #e4e4e4;
-                        vertical-align: middle;
-                        cursor: pointer;
-                    }
-                }
-                .left_btn{
-                    float: left;
-                }
-                .right_btn{
-                    float: right;
-                }
-                .center_cont{
-                    width: 100%;
-                    height: 200px;
-                }
-                .move_wrap{
-                    height: 200px;
-                    margin: 0 41px;
-                    position: relative;
-                    overflow: hidden;
-                    .move_ele{
-                        position: absolute;
-                        left: 0;top: 0;
-                        margin-right: -20px;
-                        padding-left: 4px;
-                    }
-                    a{
-                        float: left;
-                        margin-right: 20px;
-                        &:hover{
-                            color:  #c20000;
-                        }
-                    }
-                    dl{
-                        width: 208px;
-                        text-align: center;
-                    }
-                    dt{
-                        font-size: 14px;
-                        line-height: 40px;
-                    }
-                    dd{
-                        height: 156px;
-                        background: pink;
-                    }
-                }
-            }
         }
     }
     &_center{
@@ -608,21 +541,17 @@
             user-select: none;
             position: absolute;
             top: 0;
-            &:after{
-                content: '';
-                height: 100%;
-                display: inline-block;
-                vertical-align: middle;
-            }
             span{
                 width: 100%;
                 padding: 10px 0;
                 text-align: center;
-                display: inline-block;
                 font-size: 30px;
                 color: #e4e4e4;
-                vertical-align: middle;
                 cursor: pointer;
+                position: absolute;
+                left: 50%;top: 50%;
+                margin-left: -20px;
+                margin-top: -25px;
             }
         }
         .left_btn{
@@ -709,6 +638,7 @@
                     height: 74px;
                     padding: 5px;
                     resize: none;
+                    border: 1px solid #ccc;
                 }
             }
             .table_cont{
