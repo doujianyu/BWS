@@ -182,7 +182,8 @@
   .bws_module_title.px1_border {
     border-width: 1px; }
 .bws_module_list {
-  padding-top: 14px; }
+  padding-top: 14px;
+  height: 240px; }
   .bws_module_list li {
     position: relative;
     padding-left: 14px;

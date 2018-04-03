@@ -106,8 +106,12 @@ $(function () {
         }
         $(this).blur(function () {
             if (/\s+/.test($(this).val()) || !$(this).val()) {
+                $(this).addClass('color999')
                 $(this).val(oldVal)
             }
+        })
+        $(this).keypress(function () {
+            $(this).removeClass('color999')
         })
     })
 })
@@ -121,7 +125,7 @@ $(function () {
         }
         $(this).blur(function () {
             if (/\s+/.test($(this).val()) || !$(this).val()) {
-                $(this).addClass('color999')
+                // $(this).addClass('color999')
             }
         })
         $(this).keypress(function(){
