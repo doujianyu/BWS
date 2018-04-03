@@ -190,6 +190,14 @@
     }
 }
 
+// input 文本颜色
+.color999{
+    color: #999;
+}
+.color333{
+    color: #333;
+}
+
 // 模块
 .bws_module{
     &_wrap{
@@ -364,9 +372,6 @@
                         left: 0; top: 0;
                         z-index: 9;
                     }
-                }
-                .color999{
-                    color: #999;
                 }
                 input,
                 textarea{
@@ -624,6 +629,7 @@
                 input{
                     width: 288px;
                     height: 34px;
+                    line-height: 34px;
                     padding: 0 5px;
                     border: 1px solid #ccc;
                 }

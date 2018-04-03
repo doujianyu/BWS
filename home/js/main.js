@@ -69,7 +69,6 @@ $(function(){
             width: childrenWidth * childrenLen + 'px'
         })
         btns[0].click(function () {
-            console.log(1)
             if (!ele.is(":animated")){
                 currentMove++
                 if (currentMove > maxMove) {
@@ -81,8 +80,7 @@ $(function(){
             }
             
         })
-        btns[1].click(function () {
-            console.log(2)            
+        btns[1].click(function () {    
             if (!ele.is(":animated")){
                 currentMove--
                 if (currentMove < 0) {
@@ -99,37 +97,50 @@ $(function(){
 
 // 兼容IE placeholder (绿色通道)
 $(function () {
-    $('.bws_module_right_form p').children().focus(function () {
-        var oldVal = $(this).val()
-        if ($(this).val() == '考生姓名' || $(this).val() == '联系方式' || $(this).val() == '备注') {
-            $(this).val('')
+    var vals = ['考生姓名', '联系方式', '备注']
+
+    $('.js_hd_input').focus(function () {
+        var oVal = $(this).val()
+        if ($.inArray(oVal, vals) > -1) {
+            $(this).val('').addClass('color333').removeClass('color999')
         }
-        $(this).blur(function () {
-            if (/\s+/.test($(this).val()) || !$(this).val()) {
-                $(this).addClass('color999')
-                $(this).val(oldVal)
-            }
-        })
-        $(this).keypress(function () {
-            $(this).removeClass('color999')
-        })
+    })
+
+    $('.js_hd_input').blur(function () {
+
+        var index = $('.js_hd_input').index($(this))
+        if (/\s+/.test($(this).val()) || !$(this).val()) {
+            $(this).addClass('color999').removeClass('color333')
+            $(this).val(vals[index])
+        }
+
     })
 })
 
 // 兼容IE placeholder (报名通道)
 $(function () {
-    $('.bws_module_right_form p').children().focus(function () {
-        if ($(this).val() == '考生姓名' || $(this).val() == '联系方式' || $(this).val() == '备注') {
-            var oldVal = $(this).val()
-            $(this).val('')
+    var vals = [
+        '请输入姓名',
+        '请输入邮箱/手机号',
+        '请输入学校',
+        '请输入专业',
+        '请输入学历',
+        '备注留言'
+    ]
+
+    $('.js_ft_input').focus(function () {
+        var oVal = $(this).val()
+        if ($.inArray(oVal, vals) > -1) {
+            $(this).val('').addClass('color333').removeClass('color999')
         }
-        $(this).blur(function () {
-            if (/\s+/.test($(this).val()) || !$(this).val()) {
-                // $(this).addClass('color999')
-            }
-        })
-        $(this).keypress(function(){
-            $(this).removeClass('color999')
-        })
+    })
+    $('.js_ft_input').blur(function () {
+        var index = $('.js_ft_input').index($(this))
+
+        if (/\s+/.test($(this).val()) || !$(this).val()) {
+            $(this).addClass('color999').removeClass('color333')
+            $(this).val(vals[index])
+        }
+
     })
 })

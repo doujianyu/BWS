@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_608049_x0g4evpnyszl4n29.css">
-    <link rel="stylesheet" href="../assets/css/swiper-3.4.2.min.css">
-    <script src="../assets/js/jquery-3.3.1.min.js"></script>
-    <script src="../assets/js/swiper-3.4.2.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/idangerous.swiper2.7.6.css">
+    <script src="../assets/js/jquery-1.11.3.js"></script>
+    <script src="../assets/js/idangerous.swiper2.7.6.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
@@ -229,22 +229,26 @@
             <div class="bws_module_right_form fl">
                 <h6 class="bws_module_title">专升本绿色通道</h6>
                 <form action="">
-                    <p>
-                        <input type="text" placeholder="考生姓名">
+                    <p data-required="*">
+                        <input type="text" class="js_hd_input color999" value="考生姓名">
+                    </p>
+                    <p data-required="*">
+                        <input type="text" class="js_hd_input color999" value="联系方式">
                     </p>
                     <p>
-                        <input type="text" placeholder="联系方式">
-                    </p>
-                    <p>
-                        <textarea placeholder="备注"></textarea>
+                        <textarea class="js_hd_input color999">备注</textarea>
                     </p>
                     <div>
                         <button>问题提交</button>
                         <dl>
-                            <dd><i>&#xe641;</i>李老师：1123456789</dd>
-                            <dd><i>&#xe641;</i>李老师：11234567890</dd>
-                            <dd><i>&#xe641;</i>李老师：1123456789</dd>
-                            <dd><i>&#xe641;</i>李老师：11234567890</dd>
+                            <dd>
+                                <i>&#xe641;</i>李老师：1123456789</dd>
+                            <dd>
+                                <i>&#xe641;</i>李老师：11234567890</dd>
+                            <dd>
+                                <i>&#xe641;</i>李老师：1123456789</dd>
+                            <dd>
+                                <i>&#xe641;</i>李老师：11234567890</dd>
                         </dl>
                     </div>
                 </form>
@@ -326,9 +330,9 @@
                         考试政策
                     </span>
                     <div class="toggle_btn">
-                        <a href="##" target="_blank" class="selected" id="ben">本科</a>
+                        <a href="###" class="selected" id="ben">本科</a>
                         <em>/</em>
-                        <a href="##" target="_blank" id="zhuan">专科</a>
+                        <a href="###" id="zhuan">专科</a>
                     </div>
                     <a href="##" target="_blank" class="more">更多
                         <i>&#xe624;</i>
@@ -867,11 +871,11 @@
             </h6>
 
             <div class="bws_module_right_move_details clearfix">
-                <div class="left_btn js_left_btn">
-                    <span class="iconfont">&#xe606;</button>
+                <div class="left_btn js_left_btn" onselectstart="return false;">
+                    <span class="iconfont">&#xe606;</span>
                 </div>
-                <div class="right_btn js_right_btn">
-                    <span class="iconfont">&#xe603;</button>
+                <div class="right_btn js_right_btn" onselectstart="return false;">
+                    <span class="iconfont">&#xe603;</span>
                 </div>
                 <div class="center_cont">
                     <div class="move_wrap js_move_wrap">
@@ -995,11 +999,11 @@
             </h6>
 
             <div class="bws_module_right_move_details clearfix">
-                <div class="left_btn js_left_btn">
-                    <span class="iconfont">&#xe606;</button>
+                <div class="left_btn js_left_btn" onselectstart="return false;">
+                    <span class="iconfont">&#xe606;</span>
                 </div>
-                <div class="right_btn js_right_btn">
-                    <span class="iconfont">&#xe603;</button>
+                <div class="right_btn js_right_btn" onselectstart="return false;">
+                    <span class="iconfont">&#xe603;</span>
                 </div>
                 <div class="center_cont">
                     <div class="move_wrap js_move_wrap">
@@ -1270,37 +1274,37 @@
                     <li>
                         <div class="table_name">考生姓名:</div>
                         <div class="table_cont">
-                            <input type="text" placeholder="请输入">
+                            <input type="text" value="请输入姓名" class="js_ft_input color999">
                         </div>
                     </li>
                     <li>
                         <div class="table_name">联系方式:</div>
                         <div class="table_cont">
-                            <input type="text" placeholder="请输入">
+                            <input type="text" value="请输入邮箱/手机号" class="js_ft_input color999">
                         </div>
                     </li>
                     <li>
                         <div class="table_name">目标学校:</div>
                         <div class="table_cont">
-                            <input type="text" placeholder="请输入">
+                            <input type="text" value="请输入学校" class="js_ft_input color999">
                         </div>
                     </li>
                     <li>
                         <div class="table_name">理想专业:</div>
                         <div class="table_cont">
-                            <input type="text" placeholder="请输入">
+                            <input type="text" value="请输入专业" class="js_ft_input color999">
                         </div>
                     </li>
                     <li>
                         <div class="table_name">专科本科:</div>
                         <div class="table_cont">
-                            <input type="text" placeholder="请输入">
+                            <input type="text" value="请输入学历" class="js_ft_input color999">
                         </div>
                     </li>
                     <li>
                         <div class="table_name">备注留言:</div>
                         <div class="table_cont">
-                            <textarea placeholder="备注留言"></textarea>
+                            <textarea value="" class="js_ft_input color999">备注留言</textarea>
                         </div>
                     </li>
                     <li>

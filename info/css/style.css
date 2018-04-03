@@ -338,6 +338,12 @@
           text-align: center;
           float: right; }
 
+.color999 {
+  color: #999; }
+
+.color333 {
+  color: #333; }
+
 .bws_sign_up_wrap {
   width: 1200px;
   margin: 0 auto;
@@ -364,13 +370,14 @@
     .bws_sign_up_wrap .center_from .table input {
       width: 288px;
       height: 34px;
+      line-height: 34px;
       padding: 0 5px;
-      border: 1px solid #ccc;
-      text-align: left; }
+      border: 1px solid #ccc; }
     .bws_sign_up_wrap .center_from .table textarea {
       width: 288px;
       height: 74px;
       padding: 5px;
+      border: 1px solid #ccc;
       resize: none; }
     .bws_sign_up_wrap .center_from .table_cont {
       margin-left: 88px; }

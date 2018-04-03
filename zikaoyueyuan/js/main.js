@@ -14,15 +14,9 @@ $(function () {
 $(function () {
    // 添加省略号
    $('.bws_module_list p').each(function(){
-       console.log($(this))
        if ($(this).text().length > 120) {
            $(this).text($(this).text().substring(0, 150))
            $(this).html($(this).html() + '......')
         }
    })
-
-    // if (clip.text().length > 120) {
-    //     clip.text(clip.text().substring(0, 150))
-    //     clip.html(clip.html() + '......')
-    // }
 })

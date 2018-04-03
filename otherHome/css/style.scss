@@ -164,6 +164,7 @@
 // 广告图
 .bws_banner{
     height: 520px;
+    position: relative;
     .swiper-slide{
         height: 520px;
         background:{
@@ -171,11 +172,30 @@
             position: center center;
         }
     }
+    .swiper-pagination{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        cursor: default;
+        span{
+            cursor: pointer!important;
+        }
+    }
     a{
         display: block;
         width: 100%;
         height: 520px;
     }
+}
+
+// input 文本颜色
+.color999{
+    color: #999;
+}
+.color333{
+    color: #333;
 }
 
 // 模块
@@ -340,18 +360,16 @@
                     margin-bottom: 16px;
                     position: relative;
                     &:after{
-                        content: '*';
+                        content: attr(data-required);
                         width: 20px;
                         height: 100%;
                         line-height: 29px;
                         text-align: center;
+                        color: #757575;
                         font-size: 12px;
                         position: absolute;
                         left: 0; top: 0;
                         z-index: 9;
-                    }
-                    &:last-of-type:after{
-                        content: '';
                     }
                 }
                 input,
@@ -361,15 +379,16 @@
                     border: 1px solid #d0d0d0;
                 }
                 textarea{
-                    width: 258px;
+                    width: 256px;
                     height: 80px;
                     resize: none;
                     padding: 6px 8px;
                 }
                 input{
-                    width: 274px;
+                    width: 251px;
                     height: 27px;
-                    text-indent: 20px;
+                    line-height: 27px;
+                    padding-left: 20px;
                 }
                 div{
                     font-size: 12px;
@@ -510,21 +529,18 @@
                     width: 41px;
                     height: 200px;
                     user-select: none;
-                    &:after{
-                        content: '';
-                        height: 100%;
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
+                    position: relative;
                     span{
                         width: 100%;
                         padding: 10px 0;
                         text-align: center;
-                        display: inline-block;
                         font-size: 30px;
                         color: #e4e4e4;
-                        vertical-align: middle;
                         cursor: pointer;
+                        position: absolute;
+                        left: 50%;top: 50%;
+                        margin-left: -20px;
+                        margin-top: -45px;
                     }
                 }
                 .left_btn{
@@ -612,6 +628,7 @@
                 input{
                     width: 288px;
                     height: 34px;
+                    line-height: 34px;
                     padding: 0 5px;
                     border: 1px solid #ccc;
                 }
@@ -620,6 +637,7 @@
                     height: 74px;
                     padding: 5px;
                     resize: none;
+                    border: 1px solid #ccc;
                 }
             }
             .table_cont{

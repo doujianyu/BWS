@@ -136,6 +136,12 @@
     width: 100%;
     height: 520px; }
 
+.color999 {
+  color: #999; }
+
+.color333 {
+  color: #333; }
+
 .bws_module_wrap {
   width: 1200px;
   margin: 0 auto;
@@ -276,8 +282,6 @@
       left: 0;
       top: 0;
       z-index: 9; }
-  .bws_module_right_form form .color999 {
-    color: #999; }
   .bws_module_right_form form input,
   .bws_module_right_form form textarea {
     padding: 0;
@@ -474,6 +478,7 @@
     .bws_sign_up_wrap .center_from .table input {
       width: 288px;
       height: 34px;
+      line-height: 34px;
       padding: 0 5px;
       border: 1px solid #ccc; }
     .bws_sign_up_wrap .center_from .table textarea {
