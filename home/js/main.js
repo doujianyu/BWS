@@ -1,12 +1,16 @@
 
 // 轮播图
-// $(function () {
-//     new Swiper('.swiper-container', {
-//         pagination: '.swiper-pagination',
-//         paginationClickable: true,
-//         autoplay: 2000
-//     })
-// })
+$(function () {
+    new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        loop: true,
+        grabCursor: true,
+        autoplay: 2000,
+        speed: 500,
+        autoplayDisableOnInteraction: false,
+        paginationClickable: true
+    })
+})
 
 // 专本科切换
 $(function () {

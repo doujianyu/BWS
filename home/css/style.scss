@@ -164,12 +164,20 @@
 // 广告图
 .bws_banner{
     height: 520px;
+    position: relative;
     .swiper-slide{
         height: 520px;
         background:{
             size: cover;
             position: center center;
         }
+    }
+    .swiper-pagination{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: center;
     }
     a{
         display: block;
@@ -513,21 +521,18 @@
                     width: 41px;
                     height: 200px;
                     user-select: none;
-                    &:after{
-                        content: '';
-                        height: 100%;
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
+                    position: relative;
                     span{
                         width: 100%;
                         padding: 10px 0;
                         text-align: center;
-                        display: inline-block;
                         font-size: 30px;
                         color: #e4e4e4;
-                        vertical-align: middle;
                         cursor: pointer;
+                        position: absolute;
+                        left: 50%;top: 50%;
+                        margin-left: -20px;
+                        margin-top: -45px;
                     }
                 }
                 .left_btn{
