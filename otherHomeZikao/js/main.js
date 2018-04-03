@@ -1,30 +1,16 @@
 
 // 轮播图
-// $(function () {
-//     new Swiper('.swiper-container', {
-//         pagination: '.swiper-pagination',
-//         paginationClickable: true,
-//         autoplay: 2000
-//     })
-// })
-
-// 专本科切换
 $(function () {
-    $('#ben').click(function () {
-        $(this).addClass('selected')
-        $('#zhuan').removeClass('selected')
-        $('.js_toggle_box').eq(0).show(300).next().hide(300)
-    })
-    $('#zhuan').click(function () {
-        $(this).addClass('selected')
-        $('#ben').removeClass('selected')
-        $('.js_toggle_box').eq(1).show(300).prev().hide(300)
+    new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 2000
     })
 })
 
 $(function () { // 添加省略号
     var clip = $('#bws_text_clip')
-    if(clip.text().length > 80){
+    if(clip.text().length > 59){
         clip.text(clip.text().substring(0, 80))
         clip.html(clip.html() + '...')
     }
@@ -33,13 +19,13 @@ $(function () { // 添加省略号
 $(function(){
 
     moveElement({
-        ele: $('.js_move_ele').eq(0),
-        parent: $('.js_move_wrap').eq(0),
-        btns: [
-            $('.js_left_btn').eq(0),
-            $('.js_right_btn').eq(0)
+        ele: $('.js_move_ele').eq(0), // 要移动的元素
+        parent: $('.js_move_wrap').eq(0), // 要移动的父级元素
+        btns: [ // 左右切换按钮
+            $('.js_left_btn').eq(0), // 左边按钮
+            $('.js_right_btn').eq(0) // 右边按钮
         ],
-        speed: 500
+        speed: 500 // 移动速度
     })
     moveElement({
         ele: $('.js_move_ele').eq(1),
@@ -62,7 +48,7 @@ $(function(){
             parentWidth = parent.width(),
             maxMove = parseInt(((childrenWidth * childrenLen) - parentWidth) / childrenWidth),currentMove = 0
         ele.css({
-            width: childrenWidth * childrenLen + 'px'
+            width: `${childrenWidth * childrenLen}px`
         })
         btns[0].click(function () {
             console.log(1)
@@ -72,7 +58,7 @@ $(function(){
                     currentMove = maxMove
                 }
                 ele.animate({
-                    left: '-' + (childrenWidth * currentMove) + 'px'
+                    left: `-${childrenWidth * currentMove}px`
                 }, speed)
             }
             
@@ -85,7 +71,7 @@ $(function(){
                     currentMove = 0
                 }
                 ele.animate({
-                    left: '-' + (childrenWidth * currentMove) + 'px'
+                    left: `-${childrenWidth * currentMove}px`
                 }, speed)
             }
         })

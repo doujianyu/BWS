@@ -183,7 +183,6 @@
     &_wrap{
         @include boxCenter;
         padding-top: 30px;
-        overflow: hidden;
     }
     &_left{
         width: 366px;
@@ -346,7 +345,6 @@
                         height: 100%;
                         line-height: 29px;
                         text-align: center;
-                        color: #757575;
                         font-size: 12px;
                         position: absolute;
                         left: 0; top: 0;
@@ -363,16 +361,15 @@
                     border: 1px solid #d0d0d0;
                 }
                 textarea{
-                    width: 254px;
+                    width: 258px;
                     height: 80px;
                     resize: none;
-                    padding: 6px 20px;
+                    padding: 6px 8px;
                 }
                 input{
-                    width: 254px;
+                    width: 274px;
                     height: 27px;
-                    line-height: 27px;
-                    padding-left: 20px;
+                    text-indent: 20px;
                 }
                 div{
                     font-size: 12px;
@@ -622,7 +619,6 @@
                     width: 288px;
                     height: 74px;
                     padding: 5px;
-                    border: 1px solid #ccc;
                     resize: none;
                 }
             }

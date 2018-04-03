@@ -183,7 +183,6 @@
     &_wrap{
         @include boxCenter;
         padding-top: 30px;
-        overflow: hidden;
     }
     &_left{
         width: 366px;
@@ -346,7 +345,6 @@
                         height: 100%;
                         line-height: 29px;
                         text-align: center;
-                        color: #757575;
                         font-size: 12px;
                         position: absolute;
                         left: 0; top: 0;
@@ -363,16 +361,15 @@
                     border: 1px solid #d0d0d0;
                 }
                 textarea{
-                    width: 254px;
+                    width: 258px;
                     height: 80px;
                     resize: none;
-                    padding: 6px 20px;
+                    padding: 6px 8px;
                 }
                 input{
-                    width: 254px;
+                    width: 274px;
                     height: 27px;
-                    line-height: 27px;
-                    padding-left: 20px;
+                    text-indent: 20px;
                 }
                 div{
                     font-size: 12px;
@@ -583,6 +580,95 @@
     }
 }
 
+// 两栏模块
+.bws_column{
+    &_wrap{
+        @include boxCenter;
+        padding-top: 30px;
+    }
+    &_left,
+    &_right{
+        width: 580px;
+    }
+}
+
+// 滚动
+.bws_module_move{
+    &_wrap{
+        @include boxCenter;
+        padding-top: 30px;
+    }
+    &_details{
+        padding-top: 20px;
+        position: relative;
+        .left_btn,
+        .right_btn{
+            width: 41px;
+            height: 200px;
+            user-select: none;
+            position: absolute;
+            top: 0;
+            &:after{
+                content: '';
+                height: 100%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            span{
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+                display: inline-block;
+                font-size: 30px;
+                color: #e4e4e4;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+        }
+        .left_btn{
+            left: -41px;
+        }
+        .right_btn{
+            right: -41px;
+        }
+        .center_cont{
+            width: 100%;
+            height: 200px;
+        }
+        .move_wrap{
+            height: 200px;
+            // margin: 0 41px;
+            position: relative;
+            overflow: hidden;
+            .move_ele{
+                position: absolute;
+                left: 0;top: 0;
+                margin-right: -20px;
+                // padding-left: 4px;
+            }
+            a{
+                float: left;
+                margin-right: 20px;
+                &:hover{
+                    color:  #c20000;
+                }
+            }
+            dl{
+                width: 224px;
+                text-align: center;
+            }
+            dt{
+                font-size: 14px;
+                line-height: 40px;
+            }
+            dd{
+                height: 168px;
+                background: pink;
+            }
+        }
+    }
+}
+
 // 报名模块
 .bws_sign_up{
     &_wrap{
@@ -622,7 +708,6 @@
                     width: 288px;
                     height: 74px;
                     padding: 5px;
-                    border: 1px solid #ccc;
                     resize: none;
                 }
             }

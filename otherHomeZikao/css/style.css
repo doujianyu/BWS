@@ -129,8 +129,7 @@
 .bws_module_wrap {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 30px;
-  overflow: hidden; }
+  padding-top: 30px; }
 .bws_module_left {
   width: 366px; }
 .bws_module_title {
@@ -260,7 +259,6 @@
       height: 100%;
       line-height: 29px;
       text-align: center;
-      color: #757575;
       font-size: 12px;
       position: absolute;
       left: 0;
@@ -274,15 +272,14 @@
     font-size: 12px;
     border: 1px solid #d0d0d0; }
   .bws_module_right_form form textarea {
-    width: 254px;
+    width: 258px;
     height: 80px;
     resize: none;
-    padding: 6px 20px; }
+    padding: 6px 8px; }
   .bws_module_right_form form input {
-    width: 254px;
+    width: 274px;
     height: 27px;
-    line-height: 27px;
-    padding-left: 20px; }
+    text-indent: 20px; }
   .bws_module_right_form form div {
     font-size: 12px; }
     .bws_module_right_form form div button {
@@ -440,6 +437,74 @@
 .bws_module_last {
   width: 365px; }
 
+.bws_column_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px; }
+.bws_column_left, .bws_column_right {
+  width: 580px; }
+
+.bws_module_move_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px; }
+.bws_module_move_details {
+  padding-top: 20px;
+  position: relative; }
+  .bws_module_move_details .left_btn,
+  .bws_module_move_details .right_btn {
+    width: 41px;
+    height: 200px;
+    user-select: none;
+    position: absolute;
+    top: 0; }
+    .bws_module_move_details .left_btn:after,
+    .bws_module_move_details .right_btn:after {
+      content: '';
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle; }
+    .bws_module_move_details .left_btn span,
+    .bws_module_move_details .right_btn span {
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      display: inline-block;
+      font-size: 30px;
+      color: #e4e4e4;
+      vertical-align: middle;
+      cursor: pointer; }
+  .bws_module_move_details .left_btn {
+    left: -41px; }
+  .bws_module_move_details .right_btn {
+    right: -41px; }
+  .bws_module_move_details .center_cont {
+    width: 100%;
+    height: 200px; }
+  .bws_module_move_details .move_wrap {
+    height: 200px;
+    position: relative;
+    overflow: hidden; }
+    .bws_module_move_details .move_wrap .move_ele {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-right: -20px; }
+    .bws_module_move_details .move_wrap a {
+      float: left;
+      margin-right: 20px; }
+      .bws_module_move_details .move_wrap a:hover {
+        color: #c20000; }
+    .bws_module_move_details .move_wrap dl {
+      width: 224px;
+      text-align: center; }
+    .bws_module_move_details .move_wrap dt {
+      font-size: 14px;
+      line-height: 40px; }
+    .bws_module_move_details .move_wrap dd {
+      height: 168px;
+      background: pink; }
+
 .bws_sign_up_wrap {
   width: 1200px;
   margin: 0 auto;
@@ -472,7 +537,6 @@
       width: 288px;
       height: 74px;
       padding: 5px;
-      border: 1px solid #ccc;
       resize: none; }
     .bws_sign_up_wrap .center_from .table_cont {
       margin-left: 88px; }
