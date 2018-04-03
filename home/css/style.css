@@ -127,7 +127,10 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    text-align: center; }
+    text-align: center;
+    cursor: default; }
+    .bws_banner .swiper-pagination span {
+      cursor: pointer !important; }
   .bws_banner a {
     display: block;
     width: 100%;
@@ -281,12 +284,12 @@
     font-size: 12px;
     border: 1px solid #d0d0d0; }
   .bws_module_right_form form textarea {
-    width: 254px;
+    width: 231px;
     height: 80px;
     resize: none;
     padding: 6px 20px; }
   .bws_module_right_form form input {
-    width: 254px;
+    width: 251px;
     height: 27px;
     line-height: 27px;
     padding-left: 20px; }

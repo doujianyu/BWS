@@ -178,6 +178,10 @@
         left: 0;
         bottom: 0;
         text-align: center;
+        cursor: default;
+        span{
+            cursor: pointer!important;
+        }
     }
     a{
         display: block;
@@ -371,13 +375,13 @@
                     border: 1px solid #d0d0d0;
                 }
                 textarea{
-                    width: 254px;
+                    width: 231px;
                     height: 80px;
                     resize: none;
                     padding: 6px 20px;
                 }
                 input{
-                    width: 254px;
+                    width: 251px;
                     height: 27px;
                     line-height: 27px;
                     padding-left: 20px;
