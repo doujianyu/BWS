@@ -191,6 +191,9 @@
 .bws_context_wrap{
     @include boxCenter;
 }
+.ckepopBottom{
+    display: none;
+}
 .bws_module{
     &_wrap{
         @include boxCenter;
@@ -207,7 +210,7 @@
                     vertical-align: text-bottom;
                 }
                 ul{
-                    margin-left: 238px;
+                    margin-left: 218px;
                 }
                 li{
                     display: inline-block;
@@ -221,7 +224,7 @@
                     width: 108px;
                 }
                 .number{
-                    width: 100px;
+                    width: 120px;
                 }
                 .share{
                     a{

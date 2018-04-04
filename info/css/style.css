@@ -139,6 +139,9 @@
   width: 1200px;
   margin: 0 auto; }
 
+.ckepopBottom {
+  display: none; }
+
 .bws_module_wrap {
   width: 1200px;
   margin: 0 auto;
@@ -152,7 +155,7 @@
       font-weight: bold;
       vertical-align: text-bottom; }
     .bws_module_left_cont_text_title ul {
-      margin-left: 238px; }
+      margin-left: 218px; }
     .bws_module_left_cont_text_title li {
       display: inline-block;
       font-size: 12.5px;
@@ -162,7 +165,7 @@
     .bws_module_left_cont_text_title .address {
       width: 108px; }
     .bws_module_left_cont_text_title .number {
-      width: 100px; }
+      width: 120px; }
     .bws_module_left_cont_text_title .share a {
       display: block;
       color: #199edc; }
