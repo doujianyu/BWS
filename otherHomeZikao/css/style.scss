@@ -206,6 +206,20 @@
     }
     &_left{
         width: 366px;
+        .bws_module_title{
+            .toggle_btn{
+                left: 180px;
+            }
+        }
+        .chatBtn{
+            width: 112px;
+            height: 33px;
+            background: #ca0000;
+            border-radius: 6px;
+            color: #fff;
+            border: 0;
+            float: right;
+        }
     }
     &_title{
         height: 42px;
@@ -298,6 +312,7 @@
         
     }
     &_right{
+
         &_introduce{
             width: 496px;
             padding: 0 22px;
@@ -346,81 +361,16 @@
                 }
             }
         }
-        &_form{
+        &_last{
             width: 273px;
             padding-left: 20px;
-            font-size: 0;
-            h6{
-                width: 100%;
-                border: 0;
-                font-size: 19px;
-            }
-            form{
-                p{
-                    margin-bottom: 16px;
-                    position: relative;
-                    &:after{
-                        content: attr(data-required);
-                        width: 20px;
-                        height: 100%;
-                        line-height: 29px;
-                        text-align: center;
-                        color: #757575;
-                        font-size: 12px;
-                        position: absolute;
-                        left: 0; top: 0;
-                        z-index: 9;
-                    }
-                }
-                input,
-                textarea{
-                    padding: 0;
-                    font-size: 12px;
-                    border: 1px solid #d0d0d0;
-                }
-                textarea{
-                    width: 257px;
-                    height: 80px;
-                    resize: none;
-                    padding: 6px 8px;
-                }
-                input{
-                    width: 251px;
-                    height: 27px;
-                    line-height: 27px;
-                    padding-left: 20px;
-                }
-                div{
-                    font-size: 12px;
-                    button{
-                        width: 105px;
-                        height: 29px;
-                        background: #ca0000;
-                        font-size: 14px;
-                        color: #fff;
-                        border: 0;
-                        float: left;
-                    }
-                    dl{
-                        margin-left: 123px;
-                        line-height: 16px;
-                        dd{
-                            // margin-bottom: 7px;
-                        }
-                        i{
-                            font-size: 16px;
-                            margin-right: 8px;
-                        }
-                    }
-                }
+            li p{
+                width: 200px;
             }
         }
         &_college{
             width: 416px;
             padding: 0 26px;
-            .module_block{
-                display: block;
-            }
             &_cont_wrap{
                 display: none;
             }
@@ -531,17 +481,39 @@
     &_last{
         width: 365px;
     }
+    @at-root {
+        .module_block{
+            display: block;
+        }
+    }
 }
 
 // 两栏模块
+.bws_context_wrap{
+    @include boxCenter;
+    .bws_page_wrap{
+        text-align: center;
+        padding: 30px 0;
+        .m-style{
+            display: inline-block;
+        }
+    }
+}
+// 两栏模块
 .bws_column{
     &_wrap{
-        @include boxCenter;
-        padding-top: 30px;
+        margin-right: -40px;
+        &.not_padding{
+            padding-top: 0;
+        }
     }
-    &_left,
-    &_right{
+    &_left{
         width: 580px;
+        padding-top: 30px;
+        margin-right: 40px;
+        .bws_module_list{
+            height: 240px;
+        }
     }
 }
 

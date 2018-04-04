@@ -148,6 +148,16 @@
   padding-top: 30px; }
 .bws_module_left {
   width: 366px; }
+  .bws_module_left .bws_module_title .toggle_btn {
+    left: 180px; }
+  .bws_module_left .chatBtn {
+    width: 112px;
+    height: 33px;
+    background: #ca0000;
+    border-radius: 6px;
+    color: #fff;
+    border: 0;
+    float: right; }
 .bws_module_title {
   height: 42px;
   line-height: 42px;
@@ -258,65 +268,14 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
-.bws_module_right_form {
+.bws_module_right_last {
   width: 273px;
-  padding-left: 20px;
-  font-size: 0; }
-  .bws_module_right_form h6 {
-    width: 100%;
-    border: 0;
-    font-size: 19px; }
-  .bws_module_right_form form p {
-    margin-bottom: 16px;
-    position: relative; }
-    .bws_module_right_form form p:after {
-      content: attr(data-required);
-      width: 20px;
-      height: 100%;
-      line-height: 29px;
-      text-align: center;
-      color: #757575;
-      font-size: 12px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 9; }
-  .bws_module_right_form form input,
-  .bws_module_right_form form textarea {
-    padding: 0;
-    font-size: 12px;
-    border: 1px solid #d0d0d0; }
-  .bws_module_right_form form textarea {
-    width: 257px;
-    height: 80px;
-    resize: none;
-    padding: 6px 8px; }
-  .bws_module_right_form form input {
-    width: 251px;
-    height: 27px;
-    line-height: 27px;
-    padding-left: 20px; }
-  .bws_module_right_form form div {
-    font-size: 12px; }
-    .bws_module_right_form form div button {
-      width: 105px;
-      height: 29px;
-      background: #ca0000;
-      font-size: 14px;
-      color: #fff;
-      border: 0;
-      float: left; }
-    .bws_module_right_form form div dl {
-      margin-left: 123px;
-      line-height: 16px; }
-      .bws_module_right_form form div dl i {
-        font-size: 16px;
-        margin-right: 8px; }
+  padding-left: 20px; }
+  .bws_module_right_last li p {
+    width: 200px; }
 .bws_module_right_college {
   width: 416px;
   padding: 0 26px; }
-  .bws_module_right_college .module_block {
-    display: block; }
   .bws_module_right_college_cont_wrap {
     display: none; }
   .bws_module_right_college_cont dl {
@@ -397,13 +356,28 @@
   padding: 0 52px; }
 .bws_module_last {
   width: 365px; }
+.module_block {
+  display: block; }
+
+.bws_context_wrap {
+  width: 1200px;
+  margin: 0 auto; }
+  .bws_context_wrap .bws_page_wrap {
+    text-align: center;
+    padding: 30px 0; }
+    .bws_context_wrap .bws_page_wrap .m-style {
+      display: inline-block; }
 
 .bws_column_wrap {
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 30px; }
-.bws_column_left, .bws_column_right {
-  width: 580px; }
+  margin-right: -40px; }
+  .bws_column_wrap.not_padding {
+    padding-top: 0; }
+.bws_column_left {
+  width: 580px;
+  padding-top: 30px;
+  margin-right: 40px; }
+  .bws_column_left .bws_module_list {
+    height: 240px; }
 
 .bws_module_move_wrap {
   width: 1200px;
