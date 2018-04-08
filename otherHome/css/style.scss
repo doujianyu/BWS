@@ -596,6 +596,35 @@
     }
 }
 
+// 两栏模块
+.bws_context_wrap{
+    @include boxCenter;
+    .bws_page_wrap{
+        text-align: center;
+        padding: 30px 0;
+        .m-style{
+            display: inline-block;
+        }
+    }
+}
+// 两栏模块
+.bws_column{
+    &_wrap{
+        margin-right: -40px;
+        &.not_padding{
+            padding-top: 0;
+        }
+    }
+    &_left{
+        width: 580px;
+        padding-top: 30px;
+        margin-right: 40px;
+        .bws_module_list{
+            height: 240px;
+        }
+    }
+}
+
 // 报名模块
 .bws_sign_up{
     &_wrap{

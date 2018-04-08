@@ -451,6 +451,26 @@
 .bws_module_last {
   width: 365px; }
 
+.bws_context_wrap {
+  width: 1200px;
+  margin: 0 auto; }
+  .bws_context_wrap .bws_page_wrap {
+    text-align: center;
+    padding: 30px 0; }
+    .bws_context_wrap .bws_page_wrap .m-style {
+      display: inline-block; }
+
+.bws_column_wrap {
+  margin-right: -40px; }
+  .bws_column_wrap.not_padding {
+    padding-top: 0; }
+.bws_column_left {
+  width: 580px;
+  padding-top: 30px;
+  margin-right: 40px; }
+  .bws_column_left .bws_module_list {
+    height: 240px; }
+
 .bws_sign_up_wrap {
   width: 1200px;
   margin: 0 auto;
