@@ -218,15 +218,19 @@
                     display: inline-block;
                     font-size: 12.5px;
                     padding-top: 16px;
+                    text-align: center;
                 }
                 .author{
-                    width: 218px;
+                    width: 10em;
+                    white-space: nowrap;
+                    overflow: hidden;
                 }
                 .time{
-                    width: 252px;
+                    width: 164px;
+                    padding: 16px 4px 0;
                 }
                 .address{
-                    width: 108px;
+                    width: 200px;
                 }
                 .number{
                     width: 120px;

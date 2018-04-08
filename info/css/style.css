@@ -159,13 +159,17 @@
     .bws_module_left_cont_text_title li {
       display: inline-block;
       font-size: 12.5px;
-      padding-top: 16px; }
+      padding-top: 16px;
+      text-align: center; }
     .bws_module_left_cont_text_title .author {
-      width: 218px; }
+      width: 10em;
+      white-space: nowrap;
+      overflow: hidden; }
     .bws_module_left_cont_text_title .time {
-      width: 252px; }
+      width: 164px;
+      padding: 16px 4px 0; }
     .bws_module_left_cont_text_title .address {
-      width: 108px; }
+      width: 200px; }
     .bws_module_left_cont_text_title .number {
       width: 120px; }
     .bws_module_left_cont_text_title .share a {
