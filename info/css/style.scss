@@ -204,18 +204,23 @@
         &_cont_text{
             &_title{
                 padding: 0 0 40px;
-                span{
+                h5{
+                    line-height: 1.4;
+                    text-align: center;
                     font-size: 30px;
                     font-weight: bold;
                     vertical-align: text-bottom;
                 }
                 ul{
-                    margin-left: 218px;
+                    
                 }
                 li{
                     display: inline-block;
                     font-size: 12.5px;
                     padding-top: 16px;
+                }
+                .author{
+                    width: 218px;
                 }
                 .time{
                     width: 252px;

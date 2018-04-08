@@ -38,3 +38,10 @@ $(function () {
 
     })
 })
+
+// 序列号
+$(function () {
+    $('.bws_module_right_bottom_list li').each(function (index, item) {
+        $(this).attr('data-index', index + 1)
+    })
+})

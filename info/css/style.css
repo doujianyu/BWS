@@ -150,16 +150,18 @@
   width: 742px; }
   .bws_module_left_cont_text_title {
     padding: 0 0 40px; }
-    .bws_module_left_cont_text_title span {
+    .bws_module_left_cont_text_title h5 {
+      line-height: 1.4;
+      text-align: center;
       font-size: 30px;
       font-weight: bold;
       vertical-align: text-bottom; }
-    .bws_module_left_cont_text_title ul {
-      margin-left: 218px; }
     .bws_module_left_cont_text_title li {
       display: inline-block;
       font-size: 12.5px;
       padding-top: 16px; }
+    .bws_module_left_cont_text_title .author {
+      width: 218px; }
     .bws_module_left_cont_text_title .time {
       width: 252px; }
     .bws_module_left_cont_text_title .address {
