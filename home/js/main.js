@@ -1,4 +1,15 @@
 
+// 下拉框
+$(function(){
+    $('.bws_search_nav .tit').hover(function () {
+        $(this).siblings('dl').show()
+    })
+    $('.bws_search_nav li').mouseleave(function () {
+        $(this).children('dl').hide()
+    })
+    
+})
+
 // 轮播图
 $(function () {
     new Swiper('.swiper-container', {
