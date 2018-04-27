@@ -1,0 +1,291 @@
+@charset "UTF-8";
+// 居中元素的继承属性
+@mixin boxCenter{
+    width: 1200px;
+    margin: 0 auto;
+}
+%boxCenter{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// 页面顶部
+.bws_top{
+    &_wrap{
+        height: 39px;
+        line-height: 39px;
+        background: #f8f8f8;
+        border-bottom: 1px solid #e9e9e9;
+    }
+    &_cont{
+        @include boxCenter;
+        font-size: 12px;
+        color: #333;
+        p{
+            margin-left: 224px;
+            margin-right: 224px;
+            text-align: center;
+        }
+    }
+}
+
+// 搜索
+.bws_search_wrap{
+    @include boxCenter;
+    padding: 25px 0;
+    .bws_logo{
+        width: 260px;
+        height: 50px;
+        line-height: 128px;
+        text-align: center;
+        background: {
+            size: 190px;
+            repeat: no-repeat;
+            position: left center;
+            color: transparent;
+        }
+    }
+    .bws_search{
+        height: 46px;
+        border: 1px solid #ca0000;
+        font-size: 18px;
+        margin-left: 0px;
+        margin-top: 0px;
+        input{
+            width: 402px;
+            height: 46px;
+            font-size: 18px;
+            border: 0;
+            padding: 0 0 0 18px;
+        }
+        button{
+            width: 72px;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            color: #fff;
+            background: #ca0000;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+    .bws_search_nav{
+        font-size: 16px;
+        margin-top: 12px;
+        li{
+            position: relative;
+            height: 25px;
+            line-height: 25px;
+        }
+        a{
+            margin-left: 38px;
+        }
+        dl{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            left: 38px; top: 24px;
+            border: 1px solid #e4e0e0;
+            border-radius: 4px;
+            font-size: 14px;
+            background: #fff;
+            display: none;
+            dd{
+                height: 30px;
+                line-height: 30px;
+                &:hover{
+                    background: #f2f2f2;
+                    a{
+                        color: #c00;
+                    }
+                    
+                }
+            }
+            a{
+                margin: 0;
+            }            
+        }
+    }
+}
+
+// 页面主导航
+.bws_main_nav{
+    &_wrap{
+        background: #ca0000;
+    }
+    &_cont{
+        @include boxCenter;
+        height: 54px;
+        line-height: 54px;
+        font-size: 18px;
+        li:hover{
+            background: #f01f1f;
+        }
+        a{
+            color: #feffff;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            margin-left: -1px;
+            margin-right: -1px;
+            border: 1px solid transparent;
+            height: 27px;
+            line-height: 27px;
+            &:hover{
+                border: 1px solid transparent;
+            }
+            &.selected{
+                border: 1px solid transparent;
+            }
+        }
+        
+        li{
+            width: (100% / 11);
+        }
+    }
+}
+
+// 地区导航和热门专业
+.bws_city_hot_contain{
+    background: #f6f6f6;
+}
+.bws_city_hot_wrap{
+    @include boxCenter;
+    $size: 65px;
+    padding: 20px 0;
+    .bws_nav_name{
+        
+        width: $size;
+        height: $size;
+        color: #fffeff;
+        background: #ca0000;
+        span{
+            width: $size;
+            height: $size;
+            line-height: 20px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    .bws_nav_cont{
+        height: $size;
+        background: #f6f6f6;
+        padding: 0 12px;
+        box-sizing: border-box;
+        display: -webkit-box; 
+        display: -moz-box; 
+        display: -ms-flexbox; 
+        display: -webkit-flex; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a{
+            margin: 0 8px;
+            float: left;
+            line-height: $size / 2;
+            font-size: 12px;
+        }
+        
+    }
+    .bws_city{
+        .bws_nav_cont{
+            width: 676px;
+        }
+    }
+    .bws_hot{
+        .bws_nav_cont{
+            width: 392px;
+            justify-content: flex-start;
+        }
+    }
+}
+
+// 列表文字
+.bws_module_list li{
+    font-size: 16px;
+}
+// 微博
+.bws_module_right_wbhot_details{
+    .cont{
+        font-size: 16px;
+    }
+}
+
+// 文字
+.bws_module_right_book{
+    ul li{
+        font-size: 16px;
+    }
+}
+
+// 滚动标题
+.bws_module_title.move_title{
+    margin-top: 20px;
+    height: 44px;
+    background: #f9f9f9;
+    border-top: 2px solid #d10000;
+    span{
+        margin-left: 1.5em;
+    }
+}
+// 补充动画
+.move_ele{
+    dd{
+        transition: .3s;
+    }
+    dd:hover{
+        transform: scale(1.1);
+        transform-origin: center center;
+    }
+}
+
+// qq
+.bws_module_right_form{
+    form textarea{
+        height: 60px;
+    }
+    form div{
+        text-align: center;
+    }
+    form div button{
+        float: none;
+        border-radius: 20px;
+    }
+    form div dl i{
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        background: {
+            size: cover;
+        }
+    }
+    form div dl{
+        margin-top: 4px;
+        margin-left: 0;
+        overflow: hidden;
+        dd{
+            width: 50%;
+            float: left;
+        }
+    }
+    dd{
+        line-height: 24px;
+    }
+}
+
+.bws_module_lists_item_list li{
+    font-size: 16px;
+}
+.bws_module_left_cont_text_page{
+    font-size: 14px;
+}
+.bws_module_right_bottom_list li{
+    font-size: 16px;
+}
+// 序号颜色
+.bws_module_right_bottom_list li:after{
+    background: #ca0000;
+}
