@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-
 // 居中元素的继承属性
 @mixin boxCenter{
     width: 1200px;
@@ -14,8 +12,8 @@
 // 页面顶部
 .bws_top{
     &_wrap{
-        height: 32px;
-        line-height: 32px;
+        height: 39px;
+        line-height: 39px;
         background: #f8f8f8;
         border-bottom: 1px solid #e9e9e9;
     }
@@ -27,23 +25,6 @@
             margin-left: 224px;
             margin-right: 224px;
             text-align: center;
-            color: #ee262a;
-        }
-        i{
-            vertical-align: middle
-        }
-    }
-}
-
-// 标题图标
-.bws_module_title{
-    .icon{
-        width: 24px;
-        height: 24px;
-        display: inline-block;
-        margin-top: 10px;
-        background: {
-            size: cover;
         }
     }
 }
@@ -58,39 +39,39 @@
         line-height: 128px;
         text-align: center;
         background: {
-            size: 246px;
+            size: 190px;
             repeat: no-repeat;
             position: left center;
             color: transparent;
         }
     }
     .bws_search{
-        height: 36px;
-        border: 1px solid #e4393c;
+        height: 46px;
+        border: 1px solid #ca0000;
         font-size: 18px;
-        margin-left: 112px;
-        margin-top: 8px;
+        margin-left: 0px;
+        margin-top: 0px;
         input{
-            width: 381px;
-            height: 36px;
+            width: 402px;
+            height: 46px;
             font-size: 18px;
             border: 0;
             padding: 0 0 0 18px;
         }
         button{
             width: 72px;
-            height: 36px;
-            line-height: 36px;
+            height: 46px;
+            line-height: 46px;
             text-align: center;
             color: #fff;
-            background: #e4393c;
+            background: #ca0000;
             display: inline-block;
             font-size: 16px;
             cursor: pointer;
         }
     }
     .bws_search_nav{
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 12px;
         li{
             position: relative;
@@ -98,7 +79,7 @@
             line-height: 25px;
         }
         a{
-            margin-left: 25px;
+            margin-left: 38px;
         }
         dl{
             width: 100%;
@@ -116,7 +97,7 @@
                 &:hover{
                     background: #f2f2f2;
                     a{
-                        color: #e4393c;
+                        color: #c00;
                     }
                     
                 }
@@ -131,18 +112,18 @@
 // 页面主导航
 .bws_main_nav{
     &_wrap{
-        background: #e4393c;
+        background: #ca0000;
     }
     &_cont{
         @include boxCenter;
-        height: 44px;
-        line-height: 44px;
-        font-size: 16px;
+        height: 54px;
+        line-height: 54px;
+        font-size: 18px;
         li:hover{
-            background: #cc1216;
+            background: #f01f1f;
         }
         a{
-            color: #fff;
+            color: #feffff;
             display: inline-block;
             text-align: center;
             width: 100%;
@@ -166,34 +147,38 @@
 }
 
 // 地区导航和热门专业
+.bws_city_hot_contain{
+    background: #f6f6f6;
+}
 .bws_city_hot_wrap{
     @include boxCenter;
-    $size: 54px;
-    padding: 12px 0;
+    $size: 65px;
+    padding: 20px 0;
     .bws_nav_name{
+        
         width: $size;
         height: $size;
         color: #fffeff;
-        background: #e4393c;
+        background: #ca0000;
         span{
+            width: $size;
+            height: $size;
             line-height: 20px;
-            display: block;
-            margin: -2px 0 0 2px;
-            width: 40px;
-            height: 42px;
-            float: left;
-            font-size: 14px;
-            color: #fff;
-            padding-left: 6px;
-            padding-top: 9px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
         }
     }
     .bws_nav_cont{
         height: $size;
-        background: #fff;
+        background: #f6f6f6;
         padding: 0 12px;
         box-sizing: border-box;
-        display: block;
+        display: -webkit-box; 
+        display: -moz-box; 
+        display: -ms-flexbox; 
+        display: -webkit-flex; 
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         a{
@@ -203,11 +188,6 @@
             font-size: 12px;
         }
         
-    }
-    .bws_cont_right a{
-        width: 76px;
-        margin: 0;
-        padding: 0 8px;
     }
     .bws_city{
         .bws_nav_cont{
@@ -222,40 +202,9 @@
     }
 }
 
-// 轮播图
-.bws_banner{
-    @include boxCenter;
-    height: 420px;
-    position: relative;
-    .swiper-slide{
-        height: 420px;
-        background:{
-            size: cover;
-            position: center center;
-        }
-    }
-    .swiper-pagination{
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        text-align: center;
-        cursor: default;
-        span{
-            cursor: pointer!important;
-        }
-    }
-    a{
-        display: block;
-        width: 100%;
-        height: 520px;
-    }
-}
-
 // 列表文字
 .bws_module_list li{
     font-size: 16px;
-    line-height: 32px;
 }
 // 微博
 .bws_module_right_wbhot_details{
@@ -325,4 +274,60 @@
     dd{
         line-height: 24px;
     }
+}
+
+.bws_module_lists_item_list li{
+    font-size: 16px;
+}
+.bws_module_left_cont_text_page{
+    font-size: 14px;
+}
+.bws_module_right_bottom_list li{
+    font-size: 16px;
+}
+.bws_text_wrap .bws_module_right_bottom_list li{
+    font-size: 16px;
+}
+// 序号颜色
+.bws_module_right_bottom_list li:after{
+    background: #ca0000;
+}
+.bws_text_wrap .bws_module_right_bottom_list li:after{
+    background: #ca0000;
+}
+
+.bws_module_list {
+    li .cont p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+}
+
+// 标题图标
+.bws_module_title{
+    .icon{
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        margin-top: 10px;
+        background: {
+            size: cover;
+        }
+    }
+}
+
+.bws_left{
+    width: 800px;
+    li p{
+        width: 700px;
+    }
+}
+.bws_right{
+    width: 370px;
+}
+.bws_list_line{
+    height: 1px;
+    background: #f6f6f6;
+    margin: 12px 0;
 }
