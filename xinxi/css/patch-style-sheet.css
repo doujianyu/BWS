@@ -179,7 +179,7 @@
   font-size: 12px;
 }
 .bws_city_hot_wrap .bws_cont_right a {
-  width: 76px;
+  width: 82px;
   margin: 0;
   padding: 0 8px;
 }
@@ -338,7 +338,7 @@
 
 .bws_list_line {
   height: 1px;
-  background: #f6f6f6;
+  background: #cecece;
   margin: 12px 0;
 }
 
