@@ -38,7 +38,7 @@
   height: 50px;
   line-height: 128px;
   text-align: center;
-  background-size: 190px;
+  background-size: 246px;
   background-repeat: no-repeat;
   background-position: left center;
   background-color: transparent;
@@ -47,7 +47,7 @@
   height: 36px;
   border: 1px solid #e4393c;
   font-size: 18px;
-  margin-left: 0px;
+  margin-left: 112px;
   margin-top: 8px;
 }
 .bws_search_wrap .bws_search input {
@@ -78,7 +78,7 @@
   line-height: 25px;
 }
 .bws_search_wrap .bws_search_nav a {
-  margin-left: 38px;
+  margin-left: 25px;
 }
 .bws_search_wrap .bws_search_nav dl {
   width: 100%;
