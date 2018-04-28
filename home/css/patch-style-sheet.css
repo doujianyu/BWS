@@ -187,7 +187,7 @@
   width: 676px;
 }
 .bws_city_hot_wrap .bws_hot .bws_nav_cont {
-  width: 392px;
+  width: 416px;
   justify-content: flex-start;
 }
 
@@ -230,6 +230,14 @@
 
 .bws_module_right_book ul li {
   font-size: 16px;
+}
+
+.bws_city {
+  width: 730px;
+}
+
+.bws_hot {
+  width: 470px;
 }
 
 .bws_module_title.move_title {

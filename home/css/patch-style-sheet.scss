@@ -216,7 +216,7 @@
     }
     .bws_hot{
         .bws_nav_cont{
-            width: 392px;
+            width: 416px;
             justify-content: flex-start;
         }
     }
@@ -271,6 +271,12 @@
     }
 }
 
+.bws_city{
+    width: 730px;
+}
+.bws_hot{
+    width: 470px;
+}
 // 滚动标题
 .bws_module_title.move_title{
     margin-top: 20px;
