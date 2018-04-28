@@ -15,6 +15,17 @@
   margin-right: 224px;
   text-align: center;
 }
+.bws_top_cont i {
+  vertical-align: middle;
+}
+
+.bws_module_title .icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-top: 10px;
+  background-size: cover;
+}
 
 .bws_search_wrap {
   width: 1200px;

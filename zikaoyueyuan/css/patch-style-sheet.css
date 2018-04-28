@@ -267,4 +267,12 @@
   line-height: 20px;
 }
 
+.bws_module_title .icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-top: 10px;
+  background-size: cover;
+}
+
 /*# sourceMappingURL=patch-style-sheet.css.map */

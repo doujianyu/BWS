@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+
 // 居中元素的继承属性
 @mixin boxCenter{
     width: 1200px;
@@ -25,6 +27,22 @@
             margin-left: 224px;
             margin-right: 224px;
             text-align: center;
+        }
+        i{
+            vertical-align: middle
+        }
+    }
+}
+
+// 标题图标
+.bws_module_title{
+    .icon{
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        margin-top: 10px;
+        background: {
+            size: cover;
         }
     }
 }
@@ -155,7 +173,6 @@
     $size: 65px;
     padding: 20px 0;
     .bws_nav_name{
-        
         width: $size;
         height: $size;
         color: #fffeff;
